@@ -4,7 +4,7 @@ Feature 2 content line 3
 Feature 3 content line 4
 Base file content line 5
 Base file content line 6
-Base file content line 7
+Feature 3 conflicting change line 7
 Base file content line 8
 Base file content line 9
 Base file content line 10
