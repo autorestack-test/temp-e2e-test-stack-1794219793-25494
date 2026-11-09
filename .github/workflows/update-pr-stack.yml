@@ -1,0 +1,25 @@
+name: Update PR Stack
+run-name: "${{ github.event.action }} PR #${{ github.event.pull_request.number }} - ${{ github.event.pull_request.title }}"
+
+on:
+  pull_request:
+    types: [closed, synchronize]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+# Serialize runs per PR: the push that finishes a conflict resolution fires a
+# synchronize event while the conflict label is still attached, so without a
+# group the follow-up run races the one that triggered it.
+concurrency:
+  group: update-pr-stack-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+
+jobs:
+  update-pr-stack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Phlogistique/autorestack-action@6c0c8dc0d0e48d1c3636df5cc2b3637848c5bcd0
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
