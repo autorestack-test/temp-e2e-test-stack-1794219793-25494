@@ -1,5 +1,5 @@
 Base file content line 1
-Feature 2 content line 2
+Feature 5 content line 2
 Feature 2 content line 3
 Base file content line 4
 Main conflicting content line 5
