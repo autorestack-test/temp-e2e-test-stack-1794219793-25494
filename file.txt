@@ -1,6 +1,6 @@
 Base file content line 1
 Base file content line 2
-Base file content line 3
+NoAct Feature 1 line 3
 Base file content line 4
 Base file content line 5
 Base file content line 6
