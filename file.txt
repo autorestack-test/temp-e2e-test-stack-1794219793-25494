@@ -4,7 +4,7 @@ NoAct Feature 1 line 3
 Base file content line 4
 Base file content line 5
 Base file content line 6
-Base file content line 7
+Main conflicting change line 7
 Base file content line 8
 Base file content line 9
 Base file content line 10
