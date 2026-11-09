@@ -1,7 +1,7 @@
 Base file content line 1
 Base file content line 2
 NoAct Feature 1 line 3
-Base file content line 4
+NoAct Feature 2 line 4
 Base file content line 5
 Base file content line 6
 Base file content line 7
